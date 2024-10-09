@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades sobre Messi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Curiosidades sobre Lionel Messi</h1>
+    </header>
+
+    <section id="perguntas">
+        <div class="pergunta">
+            <h2 onclick="mostrarResposta(this)">Quantos gols Messi marcou na sua carreira?</h2>
+            <p class="resposta">Lionel Messi marcou mais de 800 gols em sua carreira profissional por clubes e seleção (atualizado em 2023).</p>
+        </div>
+
+        <div class="pergunta">
+            <h2 onclick="mostrarResposta(this)">Quantas assistências Messi fez?</h2>
+            <p class="resposta">Messi fez mais de 350 assistências ao longo de sua carreira, tornando-se um dos jogadores mais completos do futebol.</p>
+        </div>
+
+        <div class="pergunta">
+            <h2 onclick="mostrarResposta(this)">Quantas Bolas de Ouro Messi ganhou?</h2>
+            <p class="resposta">Até 2023, Messi ganhou 7 prêmios da Bola de Ouro, mais do que qualquer outro jogador na história do futebol.</p>
+        </div>
+
+        <div class="pergunta">
+            <h2 onclick="mostrarResposta(this)">Quantas Champions League Messi venceu?</h2>
+            <p class="resposta">Messi venceu a UEFA Champions League 4 vezes, todas com o Barcelona.</p>
+        </div>
+
+        <div class="pergunta">
+            <h2 onclick="mostrarResposta(this)">Em que ano Messi ganhou a Copa do Mundo?</h2>
+            <p class="resposta">Messi ganhou a Copa do Mundo em 2022, no Catar, com a seleção da Argentina.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Curiosidades sobre Messi - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarResposta(elemento) {
+            const resposta = elemento.nextElementSibling;
+            resposta.style.display = resposta.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
